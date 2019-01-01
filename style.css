@@ -1,0 +1,33 @@
+img{
+	height: 400px;
+	width: 400px;
+	padding: 4px;
+	margin: 10px;
+	transition: all 2s;
+}
+h1{ 
+	text-align: center;
+	font-family: fantasy;
+	font-size: 3em;
+	box-shadow: 1px 2px 3px 2px;
+	
+}
+@keyframes example{
+	from{
+		background-color: red;
+	}
+	to{
+		background-color: pink;
+	}
+
+}
+img:hover{
+	transform: scale(1.1);
+	animation-name: example;
+	animation-duration: 3s;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
